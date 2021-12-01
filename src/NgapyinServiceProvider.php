@@ -26,9 +26,6 @@ class NgapyinServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/assets' => public_path('vendor/assets'),
             ], 'assets');
-        }
-
-        if ($this->app->runningInConsole()) {
 
             // Export the migration
             $this->publishes([
