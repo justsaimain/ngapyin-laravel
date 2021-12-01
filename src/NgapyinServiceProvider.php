@@ -24,6 +24,11 @@ class NgapyinServiceProvider extends ServiceProvider
             ], 'Ngapyin-Auth');
 
             $this->publishes([
+                __DIR__ . '/resources/views' => resource_path('views/vendor'),
+            ], 'Ngapyin-View');
+
+
+            $this->publishes([
                 __DIR__ . '/assets' => public_path('vendor/assets'),
             ], 'Ngapyin-Assets');
 
