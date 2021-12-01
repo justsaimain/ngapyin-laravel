@@ -1,0 +1,21 @@
+{
+    "name": "justsaimain/ngapyin",
+    "description": "Package for scaffold laravel project",
+    "type": "library",
+    "require": {
+        "laravel/ui": "^3.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Justsaimain\\Ngapyin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "justsaimain",
+            "email": "saimain.primary@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
