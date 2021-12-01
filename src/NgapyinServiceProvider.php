@@ -21,17 +21,17 @@ class NgapyinServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__ . '/config/auth.php' => config_path('auth.php'),
-            ], 'auth');
+            ], 'Ngapyin-Auth');
 
             $this->publishes([
                 __DIR__ . '/assets' => public_path('vendor/assets'),
-            ], 'assets');
+            ], 'Ngapyin-Assets');
 
             // Export the migration
             $this->publishes([
-                __DIR__ . 'src/database/migrations/create_admins_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_admins_table.php'),
+                __DIR__ . '/database/migrations/create_admins_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_admins_table.php'),
                 // you can add any number of migrations here
-            ], 'migrations');
+            ], 'Ngapyin-Migrations');
             $this->commands([
                 CreateAdmin::class,
             ]);
