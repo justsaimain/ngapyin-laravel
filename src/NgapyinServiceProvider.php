@@ -27,12 +27,12 @@ class NgapyinServiceProvider extends ServiceProvider
                 __DIR__ . '/assets' => public_path('vendor/assets'),
             ], 'Ngapyin-Assets');
 
-            if (!class_exists('CreateAdminsTable')) {
-                $this->publishes([
-                    __DIR__ . '/database/migrations/create_admins_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_admins_table.php'),
-                    // you can add any number of migrations here
-                ], 'Ngapyin-Migrations');
-            }
+            // if (!class_exists('CreateAdminsTable')) {
+            //     $this->publishes([
+            //         __DIR__ . '/database/migrations/create_admins_table.php' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_admins_table.php'),
+            //         // you can add any number of migrations here
+            //     ], 'Ngapyin-Migrations');
+            // }
             $this->commands([
                 CreateAdmin::class,
             ]);
