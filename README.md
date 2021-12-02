@@ -6,7 +6,7 @@ Create Laravel Multi Authentications and Backend Dashboard Scaffold within 1 min
 
 
 
-## Screenshot
+## 🖥️ Screenshot
 
 ![App Screenshot](https://i.ibb.co/Gv3H1wL/Screenshot-2021-12-02-123849.png)
 
